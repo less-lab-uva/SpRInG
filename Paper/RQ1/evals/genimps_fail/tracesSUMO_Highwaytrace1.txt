@@ -1,0 +1,786 @@
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['signals'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['signals'] == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['signals'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger2']['signals'] == graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies graph.nodes['passenger2']['brake'] == graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] == graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] == graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['signals'] == -1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['signals'] == -1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['signals'] == -1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['signals'] == -1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['signals'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['brake'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger2']['signals'] >= graph.nodes['passenger1']['signals']
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger2']['brake'] <= graph.nodes['passenger1']['brake']
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['signals'] == 0
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 2
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['signals'] == graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['signals'] >= graph.nodes['passenger2']['signals'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')
+graph.nodes['passenger1']['signals'] == -1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+graph.nodes['passenger1']['signals'] == -1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')
+graph.nodes['passenger1']['signals'] == -1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['signals'] == -1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger1']['signals'] == -1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'FrontNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 0 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 0
+graph.nodes['passenger1']['brake'] == graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger2']['brake'] == 0
+'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor') implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 3
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == 0
+graph.nodes['passenger1']['brake'] <= graph.nodes['passenger2']['brake'] implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger2']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['brake'] == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) implies graph.nodes['passenger1']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['brake'] == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) implies graph.nodes['passenger1']['brake'] == 1
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == 1
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'FrontNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'FrontNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies 'passenger1' in nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies 'passenger1' in nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies 'passenger2' in nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) == 3 implies 'passenger2' in nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor')) > len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighbors(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighbors(graph, 'passenger2', 'RightNeighbor'))
+graph.nodes['passenger1']['brake'] == 1 implies len(nutils.getNeighborhood(graph, 'passenger1', 'RightNeighbor')) < len(nutils.getNeighborhood(graph, 'passenger2', 'RightNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighbors(graph, 'passenger1', 'LeftNeighbor')) == 1 implies graph.nodes['passenger1']['brake'] == 1
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies len(nutils.getNeighborhood(graph, 'passenger2', 'LeftNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'LeftNeighbor')) == 2 implies graph.nodes['passenger1']['brake'] == 1

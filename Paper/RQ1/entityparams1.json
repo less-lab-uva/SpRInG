@@ -1,0 +1,15 @@
+{
+    "passenger": {
+        "FrontNeighbor": "(rel_lane == 0) and (road_ID == 1) and (-20 < rel_distA < 0)",
+        "BackNeighbor": "(rel_lane == 0) and (road_ID == 1) and (0 < rel_distB < 2)",
+        "LeftNeighbor": "(rel_lane == -1) and (road_ID == 1) and ((rel_distA > 0) and (rel_distB < 0))",
+        "RightNeighbor": "(rel_lane == 1) and (road_ID == 1) and ((rel_distA > 0) and (rel_distB < 0))"
+    },
+    "recipes": {
+        "road_ID": "1 if NODE1['edge'] == NODE2['edge'] else 0",
+        "rel_lane": "NODE1['lane'] - NODE2['lane']",
+        "rel_distA": "NODE1['frontBumperPos'] - NODE2['backBumperPos']",
+        "rel_distB": "NODE1['backBumperPos'] - NODE2['frontBumperPos']"
+    },
+    "vars": ["lane", "frontBumperPos", "backBumperPos", "edge", "vel_z"]
+}

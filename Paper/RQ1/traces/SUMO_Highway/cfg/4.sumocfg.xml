@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+   <input>
+       <net-file value="../net/5.net.xml"/>
+       <route-files value="../rou/cluster1.rou.xml"/>
+       <additional value="../rou/additional.xml"/>
+   </input>
+</configuration>

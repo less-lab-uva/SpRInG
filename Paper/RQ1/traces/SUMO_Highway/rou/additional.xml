@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+	<rerouter id="example" edges="exit">
+		<interval begin="40" end="100">
+			<closingLaneReroute id="exit_0" disallow="passenger"/>
+			<closingLaneReroute id="-exit_0" disallow="passenger"/>
+		</interval>
+	</rerouter>
+</additional>

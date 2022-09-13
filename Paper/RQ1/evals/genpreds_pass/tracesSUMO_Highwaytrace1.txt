@@ -1,0 +1,16 @@
+graph.nodes['passenger1']['left_lanechange'] == 0
+graph.nodes['passenger1']['right_lanechange'] == 0
+len(nutils.getNeighbors(graph, 'passenger1', 'BackNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'passenger1', 'BackNeighbor')) == 1
+graph.nodes['passenger1']['left_lanechange'] == graph.nodes['passenger2']['left_lanechange']
+graph.nodes['passenger1']['right_lanechange'] == graph.nodes['passenger2']['right_lanechange']
+len(nutils.getNeighbors(graph, 'passenger1', 'BackNeighbor')) == len(nutils.getNeighbors(graph, 'passenger2', 'BackNeighbor'))
+len(nutils.getNeighborhood(graph, 'passenger1', 'BackNeighbor')) == len(nutils.getNeighborhood(graph, 'passenger2', 'BackNeighbor'))
+graph.nodes['passenger1']['left_lanechange'] >= graph.nodes['passenger2']['left_lanechange']
+graph.nodes['passenger1']['left_lanechange'] <= graph.nodes['passenger2']['left_lanechange']
+graph.nodes['passenger1']['right_lanechange'] >= graph.nodes['passenger2']['right_lanechange']
+graph.nodes['passenger1']['right_lanechange'] <= graph.nodes['passenger2']['right_lanechange']
+graph.nodes['passenger1']['signals'] <= 0
+graph.nodes['passenger1']['brake'] >= 0
+graph.nodes['passenger1']['signals'] >= -1
+graph.nodes['passenger1']['brake'] <= 1

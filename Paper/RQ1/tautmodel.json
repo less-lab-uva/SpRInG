@@ -1,0 +1,14 @@
+{
+    "lattice": {
+        "AllNeighborhood":[],
+        "LeftNeighborhood":["AllNeighborhood"],
+        "RightNeighborhood":["AllNeighborhood"],
+        "FrontNeighborhood":["AllNeighborhood"],
+        "BackNeighborhood":["AllNeighborhood"],
+        "AllNeighbors":["AllNeighborhood"],
+        "LeftNeighbor":["AllNeighbors", "AllNeighborhood", "LeftNeighborhood"],
+        "RightNeighbor":["AllNeighbors", "AllNeighborhood", "RightNeighborhood"],
+        "FrontNeighbor":["AllNeighbors", "AllNeighborhood", "FrontNeighborhood"],
+        "BackNeighbor":["AllNeighbors", "AllNeighborhood", "BackNeighborhood"]
+    }
+}
