@@ -1,0 +1,1370 @@
+ERROR: Unable to locate a modulefile for 'anaconda3/2021.5'
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pip in /u/drb6yv/.local/lib/python3.9/site-packages (22.2.2)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: matplotlib in /u/drb6yv/.local/lib/python3.9/site-packages (3.5.3)
+Requirement already satisfied: packaging>=20.0 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (21.0)
+Requirement already satisfied: fonttools>=4.22.0 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (4.25.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: numpy>=1.17 in /u/drb6yv/.local/lib/python3.9/site-packages (from matplotlib) (1.22.3)
+Requirement already satisfied: pyparsing>=2.2.1 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (3.0.4)
+Requirement already satisfied: python-dateutil>=2.7 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: pillow>=6.2.0 in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from matplotlib) (8.4.0)
+Requirement already satisfied: six in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (from cycler>=0.10->matplotlib) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: networkx in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (2.6.3)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in /u/drb6yv/.local/lib/python3.9/site-packages (1.22.3)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting argparse
+  Using cached argparse-1.4.0-py2.py3-none-any.whl (23 kB)
+Installing collected packages: argparse
+Successfully installed argparse-1.4.0
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: tqdm in /sw/centos-7.4/anaconda3/2021.11/lib/python3.9/site-packages (4.62.3)
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1677 implications
++ 0 generalized predicates
++ 730 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 1 predicates
++ 1514 implications
++ 1 generalized predicates
++ 722 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1722 implications
++ 0 generalized predicates
++ 696 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 918 implications
++ 3 generalized predicates
++ 444 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 966 implications
++ 3 generalized predicates
++ 495 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 4 predicates
++ 569 implications
++ 3 generalized predicates
++ 320 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 954 implications
++ 3 generalized predicates
++ 533 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 4 predicates
++ 570 implications
++ 3 generalized predicates
++ 274 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 857 implications
++ 0 generalized predicates
++ 325 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 4 predicates
++ 800 implications
++ 3 generalized predicates
++ 427 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1285 implications
++ 0 generalized predicates
++ 484 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1219 implications
++ 0 generalized predicates
++ 432 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 5 predicates
++ 453 implications
++ 4 generalized predicates
++ 242 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'BelowNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 892 implications
++ 3 generalized predicates
++ 444 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1081 implications
++ 0 generalized predicates
++ 377 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 938 implications
++ 3 generalized predicates
++ 385 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 6 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 4 predicates
++ 825 implications
++ 3 generalized predicates
++ 457 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1313 implications
++ 0 generalized predicates
++ 436 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1111 implications
++ 0 generalized predicates
++ 320 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 928 implications
++ 0 generalized predicates
++ 353 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 1129 implications
++ 3 generalized predicates
++ 674 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 592 implications
++ 3 generalized predicates
++ 280 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1307 implications
++ 0 generalized predicates
++ 406 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 1 predicates
++ 1149 implications
++ 1 generalized predicates
++ 375 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 6 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 2 predicates
++ 945 implications
++ 1 generalized predicates
++ 420 generalized implications
+
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1323 implications
++ 0 generalized predicates
++ 447 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1214 implications
++ 0 generalized predicates
++ 305 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1216 implications
++ 0 generalized predicates
++ 386 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 763 implications
++ 3 generalized predicates
++ 364 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 4 predicates
++ 609 implications
++ 3 generalized predicates
++ 346 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1297 implications
++ 0 generalized predicates
++ 331 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 606 implications
++ 3 generalized predicates
++ 293 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 720 implications
++ 3 generalized predicates
++ 258 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 1 predicates
++ 872 implications
++ 0 generalized predicates
++ 346 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 4 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1235 implications
++ 0 generalized predicates
++ 496 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 927 implications
++ 3 generalized predicates
++ 405 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1368 implications
++ 0 generalized predicates
++ 492 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 0 predicates
++ 1201 implications
++ 0 generalized predicates
++ 389 generalized implications
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Generating spatial encodings...
+DiGraph with 3 nodes and 2 edges
+Predicate inference...
+Generating Implications...
+Generalizing Relations...
+Checking Generalizations...
+
++ 3 predicates
++ 839 implications
++ 3 generalized predicates
++ 348 generalized implications
+
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')

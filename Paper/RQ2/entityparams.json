@@ -1,0 +1,18 @@
+{
+    "robot_left": {
+        "AboveNeighbor": "(rel_dist < 0.055) and (rel_z < 0)",
+        "BelowNeighbor": "(rel_dist < 0.055) and (rel_z > 0)"
+    },
+    "robot_right": {
+      "AboveNeighbor": "(rel_dist < 0.055) and (rel_z < 0)",
+      "BelowNeighbor": "(rel_dist < 0.055) and (rel_z > 0)"
+    },
+    "tissue": {
+      "AboveNeighbor": "(rel_dist < 0.055)"
+    },
+    "recipes": {
+        "rel_dist": "math.sqrt((NODE1['pos_x'] - NODE2['pos_x'])**2 + (NODE1['pos_x'] - NODE2['pos_x'])**2 + (NODE1['pos_x'] - NODE2['pos_x'])**2)",
+        "rel_z": "NODE1['pos_z'] - NODE2['pos_z']"
+    },
+    "vars": ["pos_x", "pos_y", "pos_z"]
+}

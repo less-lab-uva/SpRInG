@@ -1,0 +1,55 @@
+#!/bin/bash
+#SBATCH --job-name="trace2"
+#SBATCH --error="trace2.err"
+#SBATCH --output="trace2.output"
+#SBATCH -A mygroup
+#SBATCH -p gpu          # 1
+#SBATCH --gres=gpu:2
+#SBATCH -c 1
+
+module purge
+module load anaconda3/2021.5
+
+chmod +xxx ../install.sh
+../install.sh
+
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Expert/Suturing_C001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Expert/Suturing_C003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Expert/Suturing_C004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Expert/Suturing_F003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Expert/Suturing_F005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_E002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_F004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_E005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_G003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_G005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_I005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_D004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_B003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_I001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_G001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_I003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_F002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_D001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_B001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_B005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_C005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_E001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_H001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_H003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_G004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_D002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_H004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_D005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_I002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_E003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_H005.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_B002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_E004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_B004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_G002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_F001.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_C002.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_D003.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant
+python3 ../src/main.py --trace ../RQ2/traces/JIGSAWS_Suture/Novice/Suturing_I004.json --tautmodel ../RQ2/tautmodel.json --ndefs ../RQ2/entityparams.json --noquant

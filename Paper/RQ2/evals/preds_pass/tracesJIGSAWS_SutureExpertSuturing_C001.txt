@@ -1,0 +1,24 @@
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'robot_left', 'BelowNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'robot_left', 'BelowNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'robot_right', 'BelowNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'robot_right', 'BelowNeighbor')) == 1
+len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) == len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+'robot_right' in nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')
+'robot_right' in nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')
+len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor'))
+'tissue' in nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')
+'tissue' in nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')

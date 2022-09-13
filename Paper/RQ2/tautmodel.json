@@ -1,0 +1,8 @@
+{
+    "lattice": {
+        "allNeighborhood":[],
+        "allNeighbors":["allNeighborhood"],
+        "aboveNeighbors":["allNeighbors", "allNeighborhood"],
+        "belowNeighbors":["allNeighbors", "allNeighborhood"]
+    }
+}

@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name="trace3"
+#SBATCH --error="trace3.err"
+#SBATCH --output="trace3.output"
+#SBATCH -A mygroup
+#SBATCH -p gpu          # 1
+#SBATCH --gres=gpu:2
+#SBATCH -c 1
+
+module purge
+module load anaconda3/2021.5
+
+chmod +xxx ../install.sh
+../install.sh
+
+python3 ../src/main.py --trace ../RQ1/traces/SUMO_Highway/trace3.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams.json --classonly

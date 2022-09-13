@@ -1,0 +1,15 @@
+graph.nodes['robot1']['open'] == 0
+len(nutils.getNeighbors(graph, 'robot1', 'AboveNeighbor')) == 0
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == 1
+graph.nodes['robot1']['angle'] >= -0.2
+len(nutils.getNeighbors(graph, 'robot1', 'AboveNeighbor')) == 1
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) == 2
+len(nutils.getNeighbors(graph, 'robot1', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'robot2', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot1', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'robot2', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot1', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor'))
+'robot1' in nutils.getNeighbors(graph, 'object2', 'AboveNeighbor')
+'robot1' in nutils.getNeighborhood(graph, 'object2', 'AboveNeighbor')
+'object1' in nutils.getNeighbors(graph, 'robot2', 'AboveNeighbor')
+'object1' in nutils.getNeighborhood(graph, 'robot2', 'AboveNeighbor')
+graph.nodes['robot1']['angle'] <= 0.1

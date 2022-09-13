@@ -1,0 +1,57 @@
+graph.nodes['robot_left']['state'] == -1
+graph.nodes['robot_left']['angle'] == -0.1
+graph.nodes['robot_left']['angle'] >= -0.1
+graph.nodes['robot_left']['angle'] <= -0.1
+graph.nodes['robot_right']['state'] == -1
+graph.nodes['robot_right']['angle'] == -0.2
+graph.nodes['robot_right']['open'] == 0
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) == len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor'))
+'robot_left' in nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')
+'robot_left' in nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')) == len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')) == len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+'robot_left' in nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')
+'robot_left' in nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor'))
+'robot_right' in nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')
+'robot_right' in nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor'))
+'tissue' in nutils.getNeighbors(graph, 'robot_left', 'AboveNeighbor')
+'tissue' in nutils.getNeighborhood(graph, 'robot_left', 'AboveNeighbor')
+len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')) > len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')) > len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighbors(graph, 'tissue', 'AboveNeighbor')) < len(nutils.getNeighbors(graph, 'robot_right', 'AboveNeighbor'))
+len(nutils.getNeighborhood(graph, 'tissue', 'AboveNeighbor')) < len(nutils.getNeighborhood(graph, 'robot_right', 'AboveNeighbor'))
+graph.nodes['robot_left']['angle'] == -0.2
+graph.nodes['robot_left']['angle'] >= -0.2
+graph.nodes['robot_left']['angle'] == -0.3
+graph.nodes['robot_right']['angle'] == -0.1
+graph.nodes['robot_right']['angle'] <= -0.1
+graph.nodes['robot_right']['angle'] == 0.1
+graph.nodes['robot_right']['angle'] <= 0.1
+graph.nodes['robot_right']['angle'] == 0.2
+graph.nodes['robot_right']['angle'] <= 0.2
+graph.nodes['robot_left']['state'] == 1
+graph.nodes['robot_right']['state'] == 1
+graph.nodes['robot_right']['angle'] == 0.3
+graph.nodes['robot_right']['angle'] <= 0.3
+graph.nodes['robot_right']['angle'] == 0.4
+graph.nodes['robot_right']['angle'] <= 0.4
+graph.nodes['robot_left']['angle'] == -0.0
+graph.nodes['robot_left']['angle'] <= -0.0
+graph.nodes['robot_right']['open'] == 1
+graph.nodes['robot_left']['angle'] == 0.0
+graph.nodes['robot_left']['angle'] <= 0.0
+graph.nodes['robot_right']['angle'] == 0.5
+graph.nodes['robot_left']['angle'] == 0.1

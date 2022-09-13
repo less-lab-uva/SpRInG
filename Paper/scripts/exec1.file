@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name="trace1"
+#SBATCH --error="trace1.err"
+#SBATCH --output="trace1.output"
+#SBATCH -A mygroup
+#SBATCH -p gpu          # 1
+#SBATCH --gres=gpu:2
+#SBATCH -c 1
+
+module purge
+module load anaconda3/2021.5
+
+chmod +xxx ../install.sh
+../install.sh
+
+#python3 ../src/main.py --trace ../RQ1/traces/SUMO_Highway/trace1.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams1.json --classonly
+#python3 ../src/main.py --trace ../RQ1/traces/SUMO_Highway/trace2.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams1.json --classonly
+#python3 ../src/main.py --trace ../RQ1/traces/SUMO_Highway/trace3.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams1.json --classonly
+
+#python3 ../src/main.py --trace ../RQ1/traces/SUMO_Intersection/trace1.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams2.json --classonly
+python3 ../src/main.py --trace ../RQ1/traces/SUMO_Intersection/trace2.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams2.json --classonly --start 5 --end 499
+python3 ../src/main.py --trace ../RQ1/traces/SUMO_Intersection/trace3.json --tautmodel ../RQ1/tautmodel.json --ndefs ../RQ1/entityparams2.json --classonly --start 5 --end 499
