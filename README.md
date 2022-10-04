@@ -118,7 +118,7 @@ An example is provided below:
 
 These templates, whether they are provided by the user or generated, must provide the structure for relations that are consistent with the following grammar:
 
-<img src="./extras/grammar.png" width="400" />
+<img src="./images/grammar.png" width="400" />
 
 
 
